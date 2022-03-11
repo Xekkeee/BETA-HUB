@@ -6758,7 +6758,7 @@ end)
 
 
 MainSection:NewButton("ScriptViewer", "ButtonInfo", function(v)
-    loadstring(game:HttpGet("loadstring(game:HttpGet("https://pastebin.com/raw/dva01xpE", true))()"))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/dva01xpE", true))()
 end)
 
 MainSection:NewButton("Mr Remote Spy", "ButtonInfo", function(v)
