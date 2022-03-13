@@ -1,4 +1,5 @@
----Ss   
+---Ss
+wait(4)   
 local newsound = Instance.new("Sound",workspace)
     newsound.Name = "earbleed"
     newsound.SoundId = "rbxassetid://221057812"
@@ -17,25 +18,25 @@ TextColor = Color3.fromRGB(255,0,0),
 ElementColor = Color3.fromRGB(20, 20, 20)
 }
 
-local Window = Library.CreateLib("    Strix G Hub             AdvanceMode  [ Universal Hub ]          ", colors)
+local Window = Library.CreateLib(" ▶  Striχ 6G             AdvanceMode  [ Universal Hub ]          ", colors)
 
 
 
-local Main = Window:NewTab(" Main Info ")
-local MainSection = Main:NewSection("Welcome, Here Some Tips For The Script Hub.")
+local Main = Window:NewTab("  Main Info   ")
+local MainSection = Main:NewSection("             Welcome Fellow Exploiter!")
 
-local MainSection = Main:NewSection("Game Scripts Are Giving Credits!")
+local MainSection = Main:NewSection("         Game Scripts Are Giving Credits!")
 
 
 
-MainSection:NewButton("More Tips ", "F9 On Your KeyBoard", function(v)
+MainSection:NewButton("? ", "F9 On Your KeyBoard", function(v)
 game.StarterGui:SetCore("SendNotification", {
-    Title = "See More List In";
-    Text = "Click F 9";
+    Title = "MORE UNLEAKED SCRIPTS";
+    Text = "SOON";
     Icon = "http://www.roblox.com/asset/?id=6767927252"})
     Duration = 20;
 end)
-MainSection:NewButton("Owner Of Strix G Hub ", "CREDIST ARE GIVING!", function(v)
+MainSection:NewButton("Credits ", "CREDIST ARE GIVING!", function(v)
 
 game.StarterGui:SetCore("SendNotification", {
     Title = "Owned by ";
@@ -1099,1319 +1100,6 @@ end)
 
 
 
-local FUN = Window:NewTab("FunStuff")
-local FUNSTUFF = FUN:NewSection("Beta-Feauters")
-
-    FUNSTUFF:NewButton("Animation Gamepass", "ButtonInfo", function()
-
-    local Folder = Instance.new('Folder', game:GetService("Workspace"))
-    local AnimationPack = game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.AnimationPack
-    local ScrollingFrame = AnimationPack.ScrollingFrame
-    local CloseButton = AnimationPack.CloseButton
-
-    AnimationPack.Visible = true
-
-    local LeanAnimation = Instance.new("Animation", Folder)
-    LeanAnimation.Name = "LeanAnimation"
-    LeanAnimation.AnimationId = "rbxassetid://3152375249"
-    local Lean = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(LeanAnimation)
-
-    local LayAnimation = Instance.new("Animation", Folder)
-    LayAnimation.Name = "LayAnimation"
-    LayAnimation.AnimationId = "rbxassetid://3152378852"
-    local Lay = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(LayAnimation)
-
-    local Dance1Animation = Instance.new("Animation", Folder)
-    Dance1Animation.Name = "Dance1Animation"
-    Dance1Animation.AnimationId = "rbxassetid://3189773368"
-    local Dance1 = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Dance1Animation)
-
-    local Dance2Animation = Instance.new("Animation", Folder)
-    Dance2Animation.Name = "Dance2Animation"
-    Dance2Animation.AnimationId = "rbxassetid://3189776546"
-    local Dance2 = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Dance2Animation)
-
-    local GreetAnimation = Instance.new("Animation", Folder)
-    GreetAnimation.Name = "GreetAnimation"
-    GreetAnimation.AnimationId = "rbxassetid://3189777795"
-    local Greet = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(GreetAnimation)
-
-    local PrayingAnimation = Instance.new("Animation", Folder)
-    PrayingAnimation.Name = "PrayingAnimation"
-    PrayingAnimation.AnimationId = "rbxassetid://3487719500"
-    local Praying = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(PrayingAnimation)
-
-    for i,v in pairs(ScrollingFrame:GetChildren()) do
-        if v.Name == "TextButton" then
-            if v.Text == "Lean" then
-                v.Name = "LeanButton"
-            end
-        end
-    end
-
-    for i,v in pairs(ScrollingFrame:GetChildren()) do
-        if v.Name == "TextButton" then
-            if v.Text == "Lay" then
-                v.Name = "LayButton"
-            end
-        end
-    end
-
-    for i,v in pairs(ScrollingFrame:GetChildren()) do
-        if v.Name == "TextButton" then
-            if v.Text == "Dance1" then
-                v.Name = "Dance1Button"
-            end
-        end
-    end
-
-    for i,v in pairs(ScrollingFrame:GetChildren()) do
-        if v.Name == "TextButton" then
-            if v.Text == "Dance2" then
-                v.Name = "Dance2Button"
-            end
-        end
-    end
-
-    for i,v in pairs(ScrollingFrame:GetChildren()) do
-        if v.Name == "TextButton" then
-            if v.Text == "Greet" then
-                v.Name = "GreetButton"
-            end
-        end
-    end
-
-    for i,v in pairs(ScrollingFrame:GetChildren()) do
-        if v.Name == "TextButton" then
-            if v.Text == "Praying" then
-                v.Name = "PrayingButton"
-            end
-        end
-    end
-
-    function Stop()
-        Lay:Stop()
-        Lean:Stop()
-        Dance1:Stop()
-        Dance2:Stop()
-        Greet:Stop()
-        Praying:Stop()
-    end
-
-    local LeanTextButton = ScrollingFrame.LeanButton
-    local LayTextButton = ScrollingFrame.LayButton
-    local Dance1TextButton = ScrollingFrame.Dance1Button
-    local Dance2TextButton = ScrollingFrame.Dance2Button
-    local GreetTextButton = ScrollingFrame.GreetButton
-    local PrayingTextButton = ScrollingFrame.PrayingButton
-
-    AnimationPack.MouseButton1Click:Connect(function()
-        if ScrollingFrame.Visible == false then
-            ScrollingFrame.Visible = true
-            CloseButton.Visible = true
-        end
-    end)
-    CloseButton.MouseButton1Click:Connect(function()
-        if ScrollingFrame.Visible == true then
-            ScrollingFrame.Visible = false
-            CloseButton.Visible = false
-        end
-    end)
-    LeanTextButton.MouseButton1Click:Connect(function()
-        Stop()
-        Lean:Play()
-    end)
-    LayTextButton.MouseButton1Click:Connect(function()
-        Stop()
-        Lay:Play()
-    end)
-    Dance1TextButton.MouseButton1Click:Connect(function()
-        Stop()
-        Dance1:Play()
-    end)
-    Dance2TextButton.MouseButton1Click:Connect(function()
-        Stop()
-        Dance2:Play()
-    end)
-    GreetTextButton.MouseButton1Click:Connect(function()
-        Stop()
-        Greet:Play()
-    end)
-    PrayingTextButton.MouseButton1Click:Connect(function()
-        Stop()
-        Praying:Play()
-    end)
-
-    game:GetService("Players").LocalPlayer.Character.Humanoid.Running:Connect(function()
-        Stop()
-    end)
-    game:GetService("Players").LocalPlayer.Character.Humanoid.Died:Connect(function()
-        Stop()
-        repeat
-            wait()
-        until game:GetService("Players").LocalPlayer.Character.Humanoid.Health == 100
-        wait(1)
-        local AnimationPack = game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.AnimationPack
-        local ScrollingFrame = AnimationPack.ScrollingFrame
-        local CloseButton = AnimationPack.CloseButton
-
-        AnimationPack.Visible = true
-
-        local LeanAnimation = Instance.new("Animation", Folder)
-        LeanAnimation.Name = "LeanAnimation"
-        LeanAnimation.AnimationId = "rbxassetid://3152375249"
-        local Lean = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(LeanAnimation)
-
-        local LayAnimation = Instance.new("Animation", Folder)
-        LayAnimation.Name = "LayAnimation"
-        LayAnimation.AnimationId = "rbxassetid://3152378852"
-        local Lay = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(LayAnimation)
-
-        local Dance1Animation = Instance.new("Animation", Folder)
-        Dance1Animation.Name = "Dance1Animation"
-        Dance1Animation.AnimationId = "rbxassetid://3189773368"
-        local Dance1 = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Dance1Animation)
-
-        local Dance2Animation = Instance.new("Animation", Folder)
-        Dance2Animation.Name = "Dance2Animation"
-        Dance2Animation.AnimationId = "rbxassetid://3189776546"
-        local Dance2 = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Dance2Animation)
-
-        local GreetAnimation = Instance.new("Animation", Folder)
-        GreetAnimation.Name = "GreetAnimation"
-        GreetAnimation.AnimationId = "rbxassetid://3189777795"
-        local Greet = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(GreetAnimation)
-
-        local PrayingAnimation = Instance.new("Animation", Folder)
-        PrayingAnimation.Name = "PrayingAnimation"
-        PrayingAnimation.AnimationId = "rbxassetid://3487719500"
-        local Praying = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(PrayingAnimation)
-
-        for i,v in pairs(ScrollingFrame:GetChildren()) do
-            if v.Name == "TextButton" then
-                if v.Text == "Lean" then
-                    v.Name = "LeanButton"
-                end
-            end
-        end
-
-        for i,v in pairs(ScrollingFrame:GetChildren()) do
-            if v.Name == "TextButton" then
-                if v.Text == "Lay" then
-                    v.Name = "LayButton"
-                end
-            end
-        end
-
-        for i,v in pairs(ScrollingFrame:GetChildren()) do
-            if v.Name == "TextButton" then
-                if v.Text == "Dance1" then
-                    v.Name = "Dance1Button"
-                end
-            end
-        end
-
-        for i,v in pairs(ScrollingFrame:GetChildren()) do
-            if v.Name == "TextButton" then
-                if v.Text == "Dance2" then
-                    v.Name = "Dance2Button"
-                end
-            end
-        end
-
-        for i,v in pairs(ScrollingFrame:GetChildren()) do
-            if v.Name == "TextButton" then
-                if v.Text == "Greet" then
-                    v.Name = "GreetButton"
-                end
-            end
-        end
-
-        for i,v in pairs(ScrollingFrame:GetChildren()) do
-            if v.Name == "TextButton" then
-                if v.Text == "Praying" then
-                    v.Name = "PrayingButton"
-                end
-            end
-        end
-
-        function Stop()
-            Lay:Stop()
-            Lean:Stop()
-            Dance1:Stop()
-            Dance2:Stop()
-            Greet:Stop()
-            Praying:Stop()
-        end
-
-        local LeanTextButton = ScrollingFrame.LeanButton
-        local LayTextButton = ScrollingFrame.LayButton
-        local Dance1TextButton = ScrollingFrame.Dance1Button
-        local Dance2TextButton = ScrollingFrame.Dance2Button
-        local GreetTextButton = ScrollingFrame.GreetButton
-        local PrayingTextButton = ScrollingFrame.PrayingButton
-
-        AnimationPack.MouseButton1Click:Connect(function()
-            if ScrollingFrame.Visible == false then
-                ScrollingFrame.Visible = true
-                CloseButton.Visible = true
-            end
-        end)
-        CloseButton.MouseButton1Click:Connect(function()
-            if ScrollingFrame.Visible == true then
-                ScrollingFrame.Visible = false
-                CloseButton.Visible = false
-            end
-        end)
-        LeanTextButton.MouseButton1Click:Connect(function()
-            Stop()
-            Lean:Play()
-        end)
-        LayTextButton.MouseButton1Click:Connect(function()
-            Stop()
-            Lay:Play()
-        end)
-        Dance1TextButton.MouseButton1Click:Connect(function()
-            Stop()
-            Dance1:Play()
-        end)
-        Dance2TextButton.MouseButton1Click:Connect(function()
-            Stop()
-            Dance2:Play()
-        end)
-        GreetTextButton.MouseButton1Click:Connect(function()
-            Stop()
-            Greet:Play()
-        end)
-        PrayingTextButton.MouseButton1Click:Connect(function()
-            Stop()
-            Praying:Play()
-        end)
-    end)
-end)
-
-FUNSTUFF:NewButton("Juggernaut", "ButtonInfo", function()
-
-    local LocalPlayer = game:GetService("Players").LocalPlayer
-    local Mouse = LocalPlayer:GetMouse()
-    local OriginalKeyUpValue = 0
-    
-    local Anim = Instance.new("Animation")
-    Anim.AnimationId = "rbxassetid://2788838708"
-    
-    function StopAudio()
-        LocalPlayer.Character.LowerTorso.BOOMBOXSOUND:Stop()
-    end
-    
-    function stop(ID, Key)
-        local cor = coroutine.wrap(function()
-            wait(LocalPlayer.Character.LowerTorso.BOOMBOXSOUND.TimeLength-0.1)
-            if LocalPlayer.Character.LowerTorso.BOOMBOXSOUND.SoundId == "rbxassetid://"..ID and OriginalKeyUpValue == Key then
-                StopAudio()
-            end
-        end)
-        cor()
-    end
-    
-    function play(ID, STOP, LMAO)
-        if LocalPlayer.Backpack:FindFirstChild("[Boombox]") then
-            local Tool = nil
-            if LocalPlayer.Character:FindFirstChildOfClass("Tool") and LMAO == true then
-                Tool = LocalPlayer.Character:FindFirstChildOfClass("Tool")
-                LocalPlayer.Character:FindFirstChildOfClass("Tool").Parent = LocalPlayer.Backpack
-            end
-            LocalPlayer.Backpack["[Boombox]"].Parent =
-                LocalPlayer.Character
-            game.ReplicatedStorage.MainEvent:FireServer("Boombox", ID)
-            LocalPlayer.Character["[Boombox]"].RequiresHandle = false
-            if LocalPlayer.Character["[Boombox]"]:FindFirstChild("Handle") then
-                LocalPlayer.Character["[Boombox]"].Handle:Destroy()
-            end
-            LocalPlayer.Character["[Boombox]"].Parent =
-                LocalPlayer.Backpack
-            LocalPlayer.PlayerGui.MainScreenGui.BoomboxFrame.Visible = false
-            if Tool ~= true then
-                if Tool then
-                    Tool.Parent = LocalPlayer.Character
-                end
-            end
-            if STOP == true then
-                LocalPlayer.Character.LowerTorso:WaitForChild("BOOMBOXSOUND")
-                local cor = coroutine.wrap(function()
-                    repeat wait() until LocalPlayer.Character.LowerTorso.BOOMBOXSOUND.SoundId == "rbxassetid://"..ID and LocalPlayer.Character.LowerTorso.BOOMBOXSOUND.TimeLength > 0.01
-                    OriginalKeyUpValue = OriginalKeyUpValue+1
-                    stop(ID, OriginalKeyUpValue)
-                end)
-                cor()
-            end
-        end
-    end
-    
-    function Tool()
-        local Tool = Instance.new("Tool")
-        Tool.Name = "Juggernaut"
-        Tool.RequiresHandle = false
-        Tool.Activated:Connect(function()
-            local Character = LocalPlayer.Character
-            local Humanoid = Character:FindFirstChildOfClass("Humanoid")
-    
-            function rm()
-                for i,v in pairs(Character:GetDescendants()) do
-                    if v:IsA("BasePart") or v:IsA("MeshPart") then
-                        if v.Name ~= "Head" then
-                            for i,cav in pairs(v:GetDescendants()) do
-                                if cav:IsA("Attachment") then
-                                    if cav:FindFirstChild("OriginalPosition") then
-                                        cav.OriginalPosition:Destroy()
-                                    end
-                                end
-                            end
-                            for i,v in pairs(v:GetChildren()) do
-                                if v.Name == "OriginalSize" then
-                                    v:Destroy()
-                                end
-                            end
-                            if v:FindFirstChild("AvatarPartScaleType") then
-                                v:FindFirstChild("AvatarPartScaleType"):Destroy()
-                            end
-                        end
-                    end
-                end
-            end
-    
-            Humanoid:LoadAnimation(Anim):Play()
-            play(862491729, true, true)
-            wait(0.4)
-            rm()
-            Humanoid:FindFirstChild("BodyTypeScale"):Destroy()
-            wait(0.2)
-    
-            rm()
-            Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
-            wait(0.02)
-    
-            rm()
-            Humanoid:FindFirstChild("BodyDepthScale"):Destroy()
-            wait(0.02)
-    
-            rm()
-            Humanoid:FindFirstChild("BodyTypeScale"):Destroy()
-            wait(0.02)
-        end)
-        Tool.Parent = LocalPlayer.Backpack
-    end
-    Tool()
-end)
-
-FUNSTUFF:NewButton("Glide", "ButtonInfo", function()
-wait()
-    local outfit = Instance.new("Tool", game.Players.LocalPlayer.Backpack)
-    outfit.Name = "Glide"
-    outfit.RequiresHandle = false
-    local player = game.Players.LocalPlayer
-    while true do
-        wait()
-        if player.Character then
-            break
-        end
-    end
-    local Animation = Instance.new("Animation")
-    Animation.AnimationId = "rbxassetid://3084858603"
-    local char = player.Character
-    local Humanoid = char:WaitForChild("Humanoid")
-    local tool = outfit
-    local u1 = false
-    local u3 = false
-    local u4 = Humanoid:LoadAnimation(Animation)
-    tool.Equipped:connect(function(p1)
-        p1.Button1Down:connect(function()
-            if u1 or Humanoid.FloorMaterial ~= Enum.Material.Air then
-                return
-            end
-            u1 = true
-            u3 = true
-            u4:Play()
-            local v5 = Instance.new("BodyVelocity", char.HumanoidRootPart)
-            v5.MaxForce = Vector3.new(50000, 50000, 50000)
-            v5.Velocity = (char.HumanoidRootPart.CFrame * CFrame.Angles(math.rad(-18), 0, 0)).lookVector * 40
-            while u3 and Humanoid.FloorMaterial == Enum.Material.Air do
-                v5.Velocity = (char.HumanoidRootPart.CFrame * CFrame.Angles(math.rad(-18), 0, 0)).lookVector * 40
-                game:GetService("RunService").Heartbeat:wait()
-            end
-            v5:Destroy()
-            u3 = false
-            u4:Stop()
-            wait(0.3)
-            u1 = false
-        end)
-        p1.Button1Up:connect(function()
-            u3 = false
-        end)
-    end)
-    tool.Unequipped:connect(function()
-        u3 = false
-    end)
-end)
-
-FUNSTUFF:NewButton("Shazam Fly", "ButtonInfo", function()
-function Fly()
-        function sandbox(var,func)
-            local env = getfenv(func)
-            local newenv = setmetatable({},{
-                __index = function(self,k)
-                    if k=="script" then
-                        return var
-                    else
-                        return env[k]
-                    end
-                end,
-            })
-            setfenv(func,newenv)
-            return func
-        end
-        cors = {}
-        mas = Instance.new("Model",game:GetService("Lighting"))
-        Tool0 = Instance.new("Tool")
-        LocalScript1 = Instance.new("LocalScript")
-        Sound2 = Instance.new("Sound")
-        Sound3 = Instance.new("Sound")
-        Animation4 = Instance.new("Animation")
-        RemoteEvent5 = Instance.new("RemoteEvent")
-        Animation6 = Instance.new("Animation")
-        Tool0.Name = "Fly"
-        Tool0.Parent = mas
-        Tool0.CanBeDropped = false
-        Tool0.RequiresHandle = false
-        LocalScript1.Name = "local"
-        LocalScript1.Parent = Tool0
-        table.insert(cors,sandbox(LocalScript1,function()
-            wait();
-            local l__LocalPlayer__1 = game.Players.LocalPlayer;
-            while true do
-                wait();
-                if l__LocalPlayer__1.Character then
-                    break;
-                end;
-            end;
-            local l__Character__2 = l__LocalPlayer__1.Character;
-            local l__Humanoid__3 = l__Character__2:WaitForChild("Humanoid");
-            local l__Parent__4 = script.Parent;
-            local u1 = false;
-            local u2 = l__Humanoid__3:LoadAnimation(script.Hover);
-            local u3 = nil;
-            local u4 = nil;
-            local u5 = false;
-            local u6 = false;
-            local u7 = l__Humanoid__3:LoadAnimation(script.Fly);
-            l__Parent__4.Equipped:connect(function(p1)
-                Sound3:Play()
-                p1.TargetFilter = workspace;
-                u1 = true;
-                u2:Play();
-                u3 = Instance.new("BodyGyro");
-                u3.Name = "NA";
-                u3.Parent = l__Character__2.HumanoidRootPart;
-                u3.MaxTorque = Vector3.new(30000, 0, 30000);
-                u3.P = u3.P * 5;
-                u3.CFrame = CFrame.new(0, 0, 0);
-                u4 = Instance.new("BodyPosition");
-                u4.Name = "NA";
-                u4.Parent = l__Character__2.HumanoidRootPart;
-                u4.MaxForce = Vector3.new(60000, 60000, 60000);
-                u4.Position = l__Character__2.HumanoidRootPart.Position;
-                p1.Button1Down:connect(function()
-                    Sound2:Play()
-                    if u5 then
-                        return;
-                    end;
-                    u5 = true;
-                    u6 = true;
-                    u7:Play();
-                    local v5 = Instance.new("BodyVelocity", l__Character__2.HumanoidRootPart);
-                    v5.MaxForce = Vector3.new(50000, 50000, 50000);
-                    v5.Velocity = CFrame.new(l__Character__2.HumanoidRootPart.CFrame.p, p1.Hit.p).lookVector * 85;
-                    u3.MaxTorque = Vector3.new(30000, 30000, 30000);
-                    u3.CFrame = CFrame.new(l__Character__2.HumanoidRootPart.CFrame.p, p1.Hit.p);
-                    u4.Parent = nil;
-                    l__Humanoid__3.AutoRotate = false;
-                    if u2.IsPlaying then
-                        u2:Stop();
-                    end;
-                    while u6 do
-                        v5.Velocity = CFrame.new(l__Character__2.HumanoidRootPart.CFrame.p, p1.Hit.p).lookVector * 85;
-                        u3.CFrame = CFrame.new(l__Character__2.HumanoidRootPart.CFrame.p, p1.Hit.p);
-                        game:GetService("RunService").Heartbeat:wait();		
-                    end;
-                    l__Humanoid__3.AutoRotate = true;
-                    v5:Destroy();
-                    if u4 ~= nil then
-                        u4.Position = l__Character__2.HumanoidRootPart.Position;
-                        u4.Parent = l__Character__2.HumanoidRootPart;
-                    end;
-                    if u3 ~= nil then
-                        u3.MaxTorque = Vector3.new(30000, 0, 30000);
-                        u3.CFrame = CFrame.new(0, 0, 0);
-                    end;
-                    u6 = false;
-                    if u1 then
-                        u2:Play();
-                    end;
-                    u7:Stop();
-                    wait(0.3);
-                    u5 = false;
-                end);
-                p1.Button1Up:connect(function()
-                    Sound2:Stop()
-                    Sound3:Play()
-                    u6 = false;
-                end);
-            end);
-            l__Parent__4.Unequipped:connect(function()
-                Sound2:Stop()
-                Sound3:Play()
-                u1 = false;
-                u6 = false;
-                u3:Destroy();
-                u3 = nil;
-                u4:Destroy();
-                u4 = nil;
-                if u2.IsPlaying then
-                    u2:Stop();
-                end;
-            end);
-        end))
-        Sound2.Name = "Flapping"
-        Sound2.Parent = LocalScript1
-        Sound2.Looped = true
-        Sound2.MaxDistance = 100
-        Sound2.Pitch = 1.5
-        Sound2.PlaybackSpeed = 1.5
-        Sound2.SoundId = "rbxassetid://1462718291"
-        Sound3.Name = "Activation"
-        Sound3.Parent = LocalScript1
-        Sound3.MaxDistance = 100
-        Sound3.SoundId = "rbxassetid://2952274135"
-        Sound3.Volume = 0.69999998807907
-        Animation4.Name = "Hover"
-        Animation4.Parent = LocalScript1
-        Animation4.AnimationId = "rbxassetid://3541114300"
-        RemoteEvent5.Name = "re"
-        RemoteEvent5.Parent = LocalScript1
-        Animation6.Name = "Fly"
-        Animation6.Parent = LocalScript1
-        Animation6.AnimationId = "rbxassetid://3541044388"
-        for i,v in pairs(mas:GetChildren()) do
-            v.Parent = game.Players.LocalPlayer.Backpack
-            pcall(function() v:MakeJoints() end)
-        end
-        mas:Destroy()
-        for i,v in pairs(cors) do
-            spawn(function()
-                pcall(v)
-            end)
-        end
-    end
-    game.Players.LocalPlayer.Character:WaitForChild("FULLY_LOADED_CHAR")
-    Fly()
-end)
-
-FUNSTUFF:NewButton("Hearing", "ButtonInfo", function()
-
-    function Hearing()
-        function sandbox(var,func)
-            local env = getfenv(func)
-            local newenv = setmetatable({},{
-                __index = function(self,k)
-                    if k=="script" then
-                        return var
-                    else
-                        return env[k]
-                    end
-                end,
-            })
-            setfenv(func,newenv)
-            return func
-        end
-        cors = {}
-        mas = Instance.new("Model",game:GetService("Lighting"))
-        Tool0 = Instance.new("Tool")
-        LocalScript1 = Instance.new("LocalScript")
-        BillboardGui2 = Instance.new("BillboardGui")
-        ImageLabel3 = Instance.new("ImageLabel")
-        ScreenGui4 = Instance.new("ScreenGui")
-        TextLabel5 = Instance.new("TextLabel")
-        ScreenGui6 = Instance.new("ScreenGui")
-        ImageLabel7 = Instance.new("ImageLabel")
-        Tool0.Name = "Hearing"
-        Tool0.Parent = mas
-        Tool0.CanBeDropped = false
-        Tool0.RequiresHandle = false
-        LocalScript1.Parent = Tool0
-        table.insert(cors,sandbox(LocalScript1,function()
-            wait();
-            local l__LocalPlayer__1 = game.Players.LocalPlayer;
-            while true do
-                wait();
-                if l__LocalPlayer__1.Character then
-                    break;
-                end;
-            end;
-            local l__Character__2 = l__LocalPlayer__1.Character;
-            local u1 = false;
-            local l__PlayerGui__2 = game.CoreGui;
-            function ChatFunc(p1)
-                local v3 = p1.Chatted:connect(function(p2)
-                    if u1 then
-                        local v4 = BrickColor.Random();
-                        local v5 = script.MsgGui:Clone();
-                        if string.find(string.lower(p2), "super") then
-                            v5.Msg.TextSize = 29;
-                        end;
-                        v5.Msg.Text = p1.Name .. ": " .. p2;
-                        v5.Msg.TextColor3 = v4.Color;
-                        v5.Msg.Position = UDim2.new(0.5, math.random(-350, 350), 0.5, math.random(-210, 250));
-                        v5.Parent = l__PlayerGui__2;
-                        local v6 = script.DotGui:Clone();
-                        v6.Dot.ImageColor3 = v4.Color;
-                        v6.Enabled = true;
-                        if p1.Character then
-                            if p1.Character:findFirstChild("Head") then
-                                v6.Parent = p1.Character.Head;
-                            end;
-                        end;
-                        spawn(function()
-                            local v7 = 1 - 1;
-                            while true do
-                                v6.Size = v6.Size - UDim2.new(0, 1, 0, 1);
-                                game:GetService("RunService").RenderStepped:wait();
-                                if 0 <= 1 then
-                                    if v7 < 70 then
-    
-                                    else
-                                        break;
-                                    end;
-                                elseif 70 < v7 then
-    
-                                else
-                                    break;
-                                end;
-                                v7 = v7 + 1;				
-                            end;
-                        end);
-                        game.Debris:AddItem(v5, 3);
-                        game.Debris:AddItem(v6, 6);
-                    end;
-                end);
-            end;
-            for v8, v9 in pairs(game.Players:GetChildren()) do
-                ChatFunc(v9);
-            end;
-            game.Players.PlayerAdded:connect(function(p3)
-                ChatFunc(p3);
-            end);
-            local u3 = false;
-            local u4 = nil;
-            script.Parent.Equipped:connect(function(p4)
-                p4.Button1Down:connect(function()
-                    if u3 then
-                        return;
-                    end;
-                    u3 = true;
-                    if not u1 then
-                        u4 = script.Frame:Clone();
-                        u4.Parent = l__PlayerGui__2;
-                        u1 = true;
-                    else
-                        u4:Destroy();
-                        u1 = false;
-                    end;
-                    wait(1);
-                    u3 = false;
-                end);
-            end);
-        end))
-        BillboardGui2.Name = "DotGui"
-        BillboardGui2.Parent = LocalScript1
-        BillboardGui2.Enabled = false
-        BillboardGui2.Size = UDim2.new(0, 90, 0, 90)
-        BillboardGui2.Active = true
-        BillboardGui2.ClipsDescendants = true
-        BillboardGui2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-        BillboardGui2.AlwaysOnTop = true
-        ImageLabel3.Name = "Dot"
-        ImageLabel3.Parent = BillboardGui2
-        ImageLabel3.Size = UDim2.new(1, 0, 1, 0)
-        ImageLabel3.BackgroundColor = BrickColor.new("Institutional white")
-        ImageLabel3.BackgroundColor3 = Color3.new(1, 1, 1)
-        ImageLabel3.BackgroundTransparency = 1
-        ImageLabel3.Image = "rbxassetid://130424513"
-        ImageLabel3.ImageColor3 = Color3.new(1, 0, 0)
-        ScreenGui4.Name = "MsgGui"
-        ScreenGui4.Parent = LocalScript1
-        ScreenGui4.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-        TextLabel5.Name = "Msg"
-        TextLabel5.Parent = ScreenGui4
-        TextLabel5.Position = UDim2.new(0, 300, 0, 25)
-        TextLabel5.Size = UDim2.new(0, 1, 0, 1)
-        TextLabel5.BackgroundColor = BrickColor.new("Institutional white")
-        TextLabel5.BackgroundColor3 = Color3.new(1, 1, 1)
-        TextLabel5.BackgroundTransparency = 1
-        TextLabel5.Font = Enum.Font.SourceSansBold
-        TextLabel5.FontSize = Enum.FontSize.Size28
-        TextLabel5.Text = ""
-        TextLabel5.TextColor = BrickColor.new("Really black")
-        TextLabel5.TextColor3 = Color3.new(0, 0, 0)
-        TextLabel5.TextSize = 25
-        TextLabel5.TextStrokeTransparency = 0.60000002384186
-        ScreenGui6.Name = "Frame"
-        ScreenGui6.Parent = LocalScript1
-        ScreenGui6.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-        ImageLabel7.Name = "Image"
-        ImageLabel7.Parent = ScreenGui6
-        ImageLabel7.Size = UDim2.new(1, 0, 1, 0)
-        ImageLabel7.BackgroundColor = BrickColor.new("Institutional white")
-        ImageLabel7.BackgroundColor3 = Color3.new(1, 1, 1)
-        ImageLabel7.BackgroundTransparency = 1
-        ImageLabel7.Image = "rbxassetid://36869195"
-        ImageLabel7.ImageColor3 = Color3.new(0.290196, 1, 0.917647)
-        ImageLabel7.ImageTransparency = 0.80000001192093
-        for i,v in pairs(mas:GetChildren()) do
-            v.Parent = game.Players.LocalPlayer.Backpack
-            pcall(function() v:MakeJoints() end)
-        end
-        mas:Destroy()
-        for i,v in pairs(cors) do
-            spawn(function()
-                pcall(v)
-            end)
-        end
-    end
-    game.Players.LocalPlayer.Character:WaitForChild("FULLY_LOADED_CHAR")
-    Hearing()
-end)
-
-FUNSTUFF:NewButton("Heart bar", "ButtonInfo", function()
-
-    game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.Picture.Life.Visible = true
-    game.Players.LocalPlayer.PlayerGui:WaitForChild("MainScreenGui"):WaitForChild("Bar"):WaitForChild("HP"):WaitForChild("Picture"):WaitForChild("Life").Visible = true
-end)
-
-FUNSTUFF:NewButton("SumperJump", "ButtonInfo", function()
-
-    local  MyStand = "DxskTilIDawn"
-    local SuperJumpEnabled = false
-    
-    getgenv().Toggled = false
-    local UIS = game:GetService("UserInputService")
-    UIS.InputBegan:connect(function(input,gameProcessed)
-        if input.UserInputType == Enum.UserInputType.Keyboard then
-            if input.KeyCode == Enum.KeyCode.H then
-                if UIS:GetFocusedTextBox() == nil then
-                    if getgenv().Toggled == false then
-                        getgenv().Toggled = true
-                    else
-                        getgenv().Toggled = true
-                    end;end;end;end;end)
-    
-    local LocalPlayer = game:GetService("Players").LocalPlayer
-    local Cookies = LocalPlayer.Character:WaitForChild("Humanoid"):LoadAnimation(game.ReplicatedStorage.ClientAnimations.Roll)
-    local OriginalKeyUpValue = 0
-    local Anim = Instance.new("Animation" )
-    Anim.AnimationId = "rbxassetid://2788290270"
-    local Hover = Instance.new("Animation", game.Workspace)
-    Hover.Name = "Hover"
-    Hover.AnimationId = "rbxassetid://698251653"
-    local LeftPunch = Instance.new("Animation",  game.ReplicatedStorage.ClientAnimations)LeftPunch.Name = "LeftPunch"
-    LeftPunch.AnimationId = "rbxassetid://2788308661"
-    local LeftAnim = LocalPlayer.Character:WaitForChild("Humanoid"):LoadAnimation(game.ReplicatedStorage.ClientAnimations.LeftPunch)
-    local CoreUI = Instance.new("ScreenGui")
-    local Humanoid = game.Players.LocalPlayer.Character.Humanoid
-    CoreUI.Parent = game.CoreGui
-    local SaveLocation = nil
-    local RigWalk = nil
-    local RigIdle = nil
-    local InTimeErase = false
-    
-    local Pointing = Instance.new("Animation", game.ReplicatedStorage.ClientAnimations)
-    Pointing.AnimationId = "rbxassetid://507770453"
-    
-    local UNMASKKK = Instance.new("Animation", game.ReplicatedStorage.ClientAnimations)
-    UNMASKKK.Name = "Unmask"
-    UNMASKKK.AnimationId = "rbxassetid://3380629232"
-    
-    local MASKKK = Instance.new("Animation", game.ReplicatedStorage.ClientAnimations)
-    MASKKK.Name = "Mask"
-    MASKKK.AnimationId = "rbxassetid://3380627692"
-    
-    local Poter = LocalPlayer.Character:WaitForChild("Humanoid"):LoadAnimation(Pointing)
-    Poter.Looped = true
-    Poter.Priority = Enum.AnimationPriority.Action
-    
-    local WalkAnimation = Instance.new("Animation", game.ReplicatedStorage.ClientAnimations)
-    WalkAnimation.AnimationId = "rbxassetid://2510198475"
-    
-    local Idle = Instance.new("Animation", game.ReplicatedStorage.ClientAnimations)
-    Idle.AnimationId = "rbxassetid://507766388"
-    
-    local OldChar = LocalPlayer.Character
-    local MaskAnim = LocalPlayer.Character:WaitForChild("Humanoid"):LoadAnimation(game.ReplicatedStorage.ClientAnimations.Mask)
-    local UnmaskAnim = LocalPlayer.Character:WaitForChild("Humanoid"):LoadAnimation(game.ReplicatedStorage.ClientAnimations.Unmask)
-    
-    function FoV()
-        local fov = coroutine.wrap(function()
-            local Camera = workspace.Camera
-            for i = 1, 20 do
-                game.TweenService:Create(Camera, TweenInfo.new(0.5), {FieldOfView = 8*i}):Play()
-                wait(0.01)
-            end
-            for i = 1, 20 do
-                game.TweenService:Create(Camera, TweenInfo.new(0.5), {FieldOfView = 160-i*4.5}):Play()
-                wait(0.01)
-            end
-        end)
-        fov()
-    end
-    
-    local WalkSpeed = false
-    
-    local function rm()
-        for i, v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
-            if v.Name == "OriginalPosition" then
-                v:Destroy()
-            elseif v.Name == "OriginalSize" then
-                v:Destroy()
-            elseif v.Name == "AvatarPartScaleType" then
-                v:Destroy()
-            end
-        end
-    end
-    
-    
-    function Lighting()
-        if game.Lighting:FindFirstChild("ERASE") == nil then
-            local sound5 = Instance.new("Sound", CoreUI)
-            sound5.Volume = 0.1
-            sound5.Name = "ERASE"
-            sound5.Looped = true
-            sound5.SoundId = "rbxassetid://3167092959"
-            sound5:Play()
-    
-            game.Lighting.Sky.Parent = workspace
-            game:GetObjects("rbxassetid://6546113226")[1].Parent=game.Lighting
-    
-        else
-            workspace.Sky.Parent = game.Lighting
-            CoreUI:FindFirstChild("ERASE"):Destroy()
-            game.Lighting:FindFirstChild("ERASE"):Destroy()
-        end
-    end
-    
-    function TimeEraseUI()
-        local sound5 = Instance.new("Sound", CoreUI)
-        sound5.Volume = 0.1
-        sound5.SoundId = "rbxassetid://6546128175"
-        sound5:Play()
-    
-        local Image = Instance.new("ImageLabel", CoreUI)
-        Image.Image = "http://www.roblox.com/asset/?id=6546043746"
-        Image.BackgroundTransparency = 1
-        Image.AnchorPoint = Vector2.new(0.5, 0.5)
-        Image.Size = UDim2.fromScale(1, 1)
-        Image.Position = UDim2.fromScale(-0.5, 0.5)
-        delay(0, function()
-            for i = 0, 1, 0.1 do
-                Image.Position = UDim2.fromScale(-Image.Position.X.Scale+i, 0.5)
-                Image.ImageTransparency = Image.ImageTransparency+i
-                wait(.01)
-            end
-            Image:Destroy()
-            sound5:Destroy()
-        end)
-    end
-    
-    
-    function ModelCharacter()
-        if workspace:FindFirstChild(LocalPlayer.Name.."StringKOD") == nil then
-            local MODEL = Instance.new("Model", workspace)
-            MODEL.Name = LocalPlayer.Name.."StringKOD"
-    
-            OldChar.Humanoid:UnequipTools()
-    
-            for i, v in pairs(OldChar:GetChildren()) do 
-                if (v:IsA("BasePart")  or v:IsA("MeshPart")) and v.Parent:FindFirstChildOfClass("Humanoid") and v.Name ~= "HumanoidRootPart" then
-                    local Part = v:Clone()
-                    Part.Parent = MODEL
-                    Part.Name = v.Name
-                    Part.Material = Enum.Material.ForceField
-                    Part.CFrame = v.CFrame
-                    Part.Transparency = 0.5 
-                    Part.BrickColor = BrickColor.Red()
-                    Part.CanCollide = false
-                    Part.Anchored = true
-                    for i, v  in pairs(Part:GetChildren()) do 
-                        if v.ClassName ~= "SpecialMesh" then
-                            v:Destroy()
-                        end
-                    end
-                end
-            end
-            local NewCharacter = game:GetObjects("rbxassetid://6547055500")[1]
-            NewCharacter.Parent = MODEL
-            NewCharacter.Name = "Idaro"
-    
-            workspace.Camera.CameraSubject = NewCharacter.Humanoid
-            SaveLocation = OldChar.HumanoidRootPart.CFrame
-            InTimeErase = true
-            NewCharacter.HumanoidRootPart.CFrame = SaveLocation
-    
-            RigIdle = NewCharacter:WaitForChild("Humanoid"):LoadAnimation(Idle)
-            RigIdle.Looped = true
-            RigIdle.Priority = Enum.AnimationPriority.Action
-            RigWalk = NewCharacter:WaitForChild("Humanoid"):LoadAnimation(WalkAnimation)
-            RigWalk.Looped = true
-            RigWalk.Priority = Enum.AnimationPriority.Action
-            WalkSpeed = true
-            RigIdle:Play()
-        else
-            InTimeErase = false
-            WalkSpeed = false
-            workspace.Camera.CameraSubject =  OldChar.Humanoid
-            OldChar.HumanoidRootPart.CFrame =  workspace:FindFirstChild(LocalPlayer.Name.."StringKOD").Idaro.HumanoidRootPart.CFrame
-            workspace:FindFirstChild(LocalPlayer.Name.."StringKOD"):Destroy()
-        end
-    end
-    
-    function Slide()
-        local XD = OldChar.Humanoid:LoadAnimation(Anim)
-        XD:Play()
-        XD.TimePosition = 0.15
-        XD.Looped = false
-        XD:AdjustSpeed(1.1)
-    end
-    
-    function AddVelocity(Vel, Char)
-        Char.HumanoidRootPart.Velocity = Char.HumanoidRootPart.Velocity+Vel
-    end
-    
-    local IsJump = false
-    
-    function Jumping()
-        if IsJump == false then
-            return false
-        else
-            return true
-        end
-    end
-    
-    local Mouse = LocalPlayer:GetMouse()
-    
-    local MoveDirection = Vector3.new(0,0,0)
-    local WSpped = 0 
-    local LeftSpeed = 0
-    local UpSpeed = 0
-    
-    function IdleRigXD()
-        if RigIdle and RigWalk.IsPlaying and WSpped == 0 and LeftSpeed == 0 and UpSpeed == 0 then
-            RigIdle:Play()
-            RigWalk:Stop()
-        end
-    end
-    
-    function WalkRigXD()
-        if RigWalk and RigIdle.IsPlaying then
-            RigIdle:Stop()
-            RigWalk:Play()
-        end
-    end
-    
-    Mouse.KeyDown:Connect(function(KeyDownXD)
-        if workspace:FindFirstChild(LocalPlayer.Name.."StringKOD") then
-            if KeyDownXD == "w" then
-                WSpped = -1
-                WalkRigXD()
-            elseif KeyDownXD == "a" then
-                LeftSpeed = -1
-                WalkRigXD()
-            elseif KeyDownXD == "d" then
-                LeftSpeed = 1
-                WalkRigXD()
-            elseif KeyDownXD == "s" then
-                WSpped = 1
-                WalkRigXD()
-            end
-        end
-    end)
-    
-    Mouse.KeyUp:Connect(function(KeyDownXD)
-        if KeyDownXD == "w" then
-            WSpped = 0
-            IdleRigXD()
-        elseif KeyDownXD == "a" then
-            LeftSpeed = 0
-            IdleRigXD()
-        elseif KeyDownXD == "d" then
-            LeftSpeed = -0
-            IdleRigXD()
-        elseif KeyDownXD == "s" then
-            WSpped = 0
-            IdleRigXD()
-        end
-    end)
-    
-    local CD = false
-    local uis = game:GetService("UserInputService")
-    
-    uis.InputBegan:Connect(function(i, XD)
-        if i.KeyCode == Enum.KeyCode.H and XD == false then
-            if SuperJumpEnabled == false then
-                SuperJumpEnabled = true
-            elseif SuperJumpEnabled == true then
-                SuperJumpEnabled = false
-            end
-        end
-    end)
-    
-    uis.InputBegan:Connect(function(i, XD)
-        if i.KeyCode == Enum.KeyCode.Space and XD == false then
-            if workspace:FindFirstChild(LocalPlayer.Name.."StringKOD") == nil then
-                if Jumping() == true and not Poter.IsPlaying then
-                    AddVelocity(OldChar.HumanoidRootPart.CFrame.LookVector*150, OldChar)
-                    IsJump = false
-                    Cookies:Stop()
-                    CD = true
-                    Slide()
-                    repeat wait() until workspace:FindPartOnRayWithWhitelist(Ray.new(OldChar.HumanoidRootPart.Position, Vector3.new(0, -4 * OldChar.HumanoidRootPart.Size.y, 0)), { workspace.MAP })
-                    CD = false
-                end
-            else
-                workspace:FindFirstChild(LocalPlayer.Name.."StringKOD"):FindFirstChild("Idaro").Humanoid:ChangeState(3)
-            end
-        end
-    end)
-    
-    function StopAudio()
-        OldChar.LowerTorso.BOOMBOXSOUND:Stop()
-    end
-    
-    function stop(ID, Key)
-        local cor = coroutine.wrap(function()
-            wait(OldChar.LowerTorso.BOOMBOXSOUND.TimeLength-0)
-            if OldChar.LowerTorso.BOOMBOXSOUND.SoundId == "rbxassetid://"..ID and OriginalKeyUpValue == Key then
-                StopAudio()
-            end
-        end)
-        cor()
-    end
-    
-    
-    function play(ID, STOP, LMAO)
-        if LocalPlayer.Backpack:FindFirstChild("[Boombox]") then
-            local Tool = nil
-            if OldChar:FindFirstChildOfClass("Tool") and LMAO == true then
-                Tool = OldChar:FindFirstChildOfClass("Tool")
-                OldChar:FindFirstChildOfClass("Tool").Parent = LocalPlayer.Backpack
-            end
-            LocalPlayer.Backpack["[Boombox]"].Parent =
-                OldChar
-            game.ReplicatedStorage.MainEvent:FireServer("Boombox", ID)
-            OldChar["[Boombox]"].RequiresHandle = false
-            if OldChar["[Boombox]"]:FindFirstChild("Handle") then
-                OldChar["[Boombox]"].Handle:Destroy()
-            end
-            OldChar["[Boombox]"].Parent =
-                LocalPlayer.Backpack
-            LocalPlayer.PlayerGui.MainScreenGui.BoomboxFrame.Visible = false
-            if Tool ~= true then
-                if Tool then
-                    Tool.Parent = OldChar
-                end
-            end
-            if STOP == true then
-                OldChar.LowerTorso:WaitForChild("BOOMBOXSOUND")
-                local cor = coroutine.wrap(function()
-                    repeat wait() until OldChar.LowerTorso.BOOMBOXSOUND.SoundId == "rbxassetid://"..ID and OldChar.LowerTorso.BOOMBOXSOUND.TimeLength > 0
-                    OriginalKeyUpValue = OriginalKeyUpValue+1
-                    stop(ID, OriginalKeyUpValue)
-                end)
-                cor()
-            end
-        end
-    end
-    
-    local bro = false
-    local TimeErase, CanCel = "Time erase!", "Time erase!"
-    local TimeStop, TimeResume = "Time stop!", "Time stop!"
-    local XD = false
-    LocalPlayer.Chatted:Connect(function(MSG)
-        if MSG == "Rage!" then
-    if Humanoid:FindFirstChild("HeadScale") then
-        rm()
-        wait(0.6)
-    
-        Humanoid:FindFirstChild("HeadScale"):Destroy()
-        wait(0.6)
-    end
-    
-    
-    if Humanoid:FindFirstChild("BodyWidthScale") then
-        rm()
-        wait(0.6)
-        Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
-        wait(0.6)
-    end
-    
-    
-    
-    if Humanoid:FindFirstChild("BodyDepthScale") then
-        rm()
-        wait(0.6)
-        Humanoid:FindFirstChild("BodyDepthScale"):Destroy()
-        wait(0.6)
-    end
-    
-    
-    
-    if Humanoid:FindFirstChild("BodyTypeScale") then
-        rm()
-        wait(0.6)
-        Humanoid:FindFirstChild("BodyTypeScale"):Destroy()
-       wait(0.6)
-    end
-        elseif MSG:sub(1, 11) == TimeErase and XD == false and not Poter.IsPlaying then
-            XDDDD(XD)
-        elseif MSG == CanCel and XD == true and not Poter.IsPlaying then
-            XDDDD(XD)
-        elseif MSG == TimeStop then
-            play(6947054675, true, true)
-            wait(0.3)
-            OldChar.LowerTorso.BOOMBOXSOUND.SoundId = "http://www.roblox.com/asset/?id=wd"
-            wait(0.1)
-            play(7084712646, true, true)
-        end
-    end)
-    
-    function XDDDD(XDR)
-        if XDR == false then
-            XD = true
-            play(6546133414, true, true)
-            wait(2)
-            TimeEraseUI()
-            FoV()
-            Lighting()
-            ModelCharacter()
-        else
-            XD = false
-            InTimeErase = false
-            wait(0.1)
-            play(6543435253, true, true)
-            TimeEraseUI()
-            ModelCharacter()
-            Lighting()
-            FoV()
-    end
-    end
-    
-    function Jump(...)
-        (...).Jumping:Connect(function()
-            if SuperJumpEnabled == true then
-            if CD == false and not Poter.IsPlaying then
-                CD = true
-                delay(1, function()
-                    CD = false
-                end)
-                Cookies:Play(0, 1, 1.4)
-                AddVelocity(OldChar.HumanoidRootPart.CFrame.UpVector*120, OldChar)
-                delay(0, function()
-                    IsJump = true
-                    wait(1) 
-                    if IsJump == true then
-                        IsJump = false
-                    end
-                end)
-                end
-            end
-        end)
-    end
-    
-    
-    Jump(OldChar.Humanoid)
-    
-    LocalPlayer.CharacterAdded:Connect(function(Character)
-        wait(1)
-        if Character.Name == LocalPlayer.Name then
-            Jump(Character.Humanoid)
-            Poter = Character:WaitForChild("Humanoid"):LoadAnimation(Pointing)
-            Poter.Looped = true
-            Poter.Priority = Enum.AnimationPriority.Action
-    
-            Cookies = Character:WaitForChild("Humanoid"):LoadAnimation(game.ReplicatedStorage.ClientAnimations.Roll)
-            OldChar = Character
-        end
-    end)
-    
-    game["Run Service"].Heartbeat:Connect(function()
-        if InTimeErase then
-            for i, v in pairs(OldChar:GetChildren()) do
-                if v:IsA("BasePart") then
-                    v.CFrame = CFrame.new(math.random(200, 500), math.random(200, 500), math.random(200, 500))
-                    v.Velocity = Vector3.new(0,0,0)
-                end
-            end
-    
-            if OldChar:FindFirstChild("Combat") and XD == true then
-                XD = false
-                XDDDD(true)
-            end
-    
-            if WalkSpeed == true then
-                MoveDirection = Vector3.new(LeftSpeed, UpSpeed, WSpped)
-                workspace:FindFirstChild(LocalPlayer.Name.."StringKOD"):FindFirstChild("Idaro").Humanoid:Move(MoveDirection, true)
-            end
-        else
-            if OldChar:FindFirstChild("[Flashlight]") then
-                if workspace.Players:FindFirstChild(MyStand) then
-                    if not Poter.IsPlaying then
-                        Poter:Play()
-                        Poter:AdjustSpeed(0)
-                        Poter.TimePosition = 1.2
-                    end
-                    local lol = workspace.Players:FindFirstChild(MyStand).HumanoidRootPart.CFrame * CFrame.new(0, 0.5, 1.25)
-                    OldChar.HumanoidRootPart.CFrame = lol
-                end
-            else
-                if Poter.IsPlaying then
-                    Poter:Stop()
-                end
-            end
-        end
-    end)
-end)
-
-FUNSTUFF:NewButton("Fake Macro", "ButtonInfo", function()
-
-    plr = game:GetService('Players').LocalPlayer
-    down = true
-     
-    function onButton1Down(mouse)
-        down = true
-        while down do
-            if not down then break end
-            local char = plr.Character
-            char.HumanoidRootPart.Velocity = char.HumanoidRootPart.CFrame.lookVector * 190
-            wait()
-        end
-    end
-     
-    function onButton1Up(mouse)
-        down = false
-    end
-     
-    function onSelected(mouse)
-        mouse.KeyDown:connect(function(c) if c:lower()=="c"then onButton1Down(mouse)end end)
-        mouse.KeyUp:connect(function(c) if c:lower()=="c"then onButton1Up(mouse)end end)
-    end
-    onSelected(game.Players.LocalPlayer:GetMouse())
-end)
 
 
 
@@ -2666,7 +1354,7 @@ local player = game.Players.LocalPlayer
 local admsg = ".gg/ROGmarketV"
 local isamod = false
 local prefix = "!"
-local mods = {1821780137}
+local mods = {2788229376}
 
 if table.find(mods,player.UserId) then
 isamod = true
@@ -2952,7 +1640,7 @@ getgenv().C = {
 }
 loadstring(game:HttpGet('https://raw.githubusercontent.com/hacer69/Balls/main/AltControl'))()
 end)
-v2Section:NewButton("Alt controlv2", "Encrypt", function(v)
+v2Section:NewButton("Alt controlv2 main", "Encrypt", function(v)
     --[[
 --// Made by Homolife#1525
 
@@ -2995,7 +1683,7 @@ Places: admin
 
 getgenv().Prefix = "."
 
-getgenv().Operator = {1821780137}
+getgenv().Operator = {3195512339}
 
 getgenv().Droppers = {2395223942}
 getgenv().Droppers = {2395183348}
@@ -3387,7 +2075,7 @@ Section1:NewToggle("Start Dropping", "On Loop!", function(state)
 
             local args = {
                 [1] = "DropMoney",
-                [2] = 1000
+                [2] = 10000
 
             }
 
@@ -3398,7 +2086,7 @@ Section1:NewToggle("Start Dropping", "On Loop!", function(state)
 
             local args = {
                 [1] = "DropMoney",
-                [2] = 1000
+                [2] = 10000
 
             }
 
@@ -3558,7 +2246,7 @@ Section11:NewButton("Rejoin Server", "ButtonInfo", function(v)
 game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId, game.Players.LocalPlayer)
 end)
 
-                Section11:NewKeybind("Close/Open ", "Close GUI", Enum.KeyCode.J, function()
+                Section11:NewKeybind("Close/Open ", "Close GUI", Enum.KeyCode.G, function()
                 Library:ToggleUI()
             end)
 
@@ -4272,7 +2960,19 @@ MainSection:NewToggle("Noclip", "ToggleInfo", function(v)
 
 end)
 
+local MainSection = Player:NewSection("Player Anims ")
 
+MainSection:NewButton("Point", "Only R6 Games.", function(v)
+    game.Players:Chat("/e point")
+    end)
+
+    MainSection:NewButton("Dance", "Only R6 Games.", function(v)
+        game.Players:Chat("/e dance")
+        end)
+
+
+
+        
 
 MainSection:NewButton("R6 Animations", "Only R6 Games.", function(v)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Aniamtion", true))()
@@ -4293,7 +2993,7 @@ MainSection:NewButton("Fake Lag", "R6 , R15", function(v)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Fake%20Lag.txt", true))()
     end)
 
-    local MainSection = Player:NewSection("ServerChat Mics")
+    local MainSection = Player:NewSection("PlayerChat Mics")
 
     MainSection:NewButton("ChatGrammar", "Auto Fix your Grammar", function(v)
 
@@ -4316,6 +3016,10 @@ MainSection:NewButton("Fake Lag", "R6 , R15", function(v)
                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Chat_Translator_Script.txt", true))()
                
                end)
+
+MainSection:NewButton("Nazi", "", function(v)
+    loadstring(game:HttpGet("https://pastebin.com/raw/ahBKsjJ2",true))()
+    end)
 
 MainSection:NewButton("ChatResponder", "It Auto Talk you to Other People", function(v)
 
@@ -4872,20 +3576,70 @@ MainSection:NewButton("Custom Cursor Hit", "", function(v)
 
 
 
+MainSection:NewButton("Herrtt Aimbot", "", function(v)
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Herrtt/AimHot-v8/master/Main.lua", true))()
+                end)
+
+
+local MainSection = Player:NewSection("Universal HitBox (Buggy)")
+
+
+MainSection:NewButton("HBE Gui", "", function(v)
+       loadstring(game:HttpGet("https://pastebin.com/raw/S7ajt2HJ", true))()
+                end)
+
+
+MainSection:NewButton("HitBox Extender", "", function(v)
+       _G.HeadSize = 30
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+if v.Team ~= team then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end
+end)
+                end)
 
 
 
 
+MainSection:NewButton("TeamCheck Hitbox", "", function(v)
+       _G.HeadSize = 30
+_G.Disabled = true
 
+local lp = game.Players.LocalPlayer
+local team = lp.Team
 
-
-
-
-
-
-
-
-
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+if v.Team ~= team then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end
+end)
+                end)
 
 
 
@@ -5064,7 +3818,7 @@ end)
 
 
 
-local v1MainSection = Main:NewSection(" Fe Hub⋖ ")
+local v1MainSection = Main:NewSection(" Fe Hub ")
 
  
 v1MainSection:NewButton("Animate hub", "Stable Animate Net", function(v)       
@@ -6574,7 +5328,9 @@ MainSection:NewButton("Best Fling GUI", "R6, R15", function(v)
         notif("Loaded successfully! Created by Damain#1476", 5)
         end)
 
-
+MainSection:NewButton("yeet v3 ", "Works on  R6 , R15", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/yeet%20v3", true))()
+    end)
 
 local MainSection = Main:NewSection(" Fling GUI ")
 
@@ -6718,7 +5474,7 @@ MainSection:NewButton("CMD X", "ButtonInfo", function(v)
   
 
 
-local MainSection = Main:NewSection("Server Mics ")
+local MainSection = Main:NewSection("ServerExplorers ")
 
 MainSection:NewButton("Dex v3", "ButtonInfo", function(v)
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/Rogg15/CookieLogger/main/DarkDex'),true))()
@@ -6908,10 +5664,28 @@ MainSection:NewButton("Physics Gun", "Inorder to Show Rejoin.", function(v)
         end)
 
 
+MainSection:NewButton("Alt+Print ", "Inorder to Show Rejoin.", function(v)
+local Plr = game:GetService("Players").LocalPlayer
+local Mouse = Plr:GetMouse()
+
+Mouse.Button1Down:connect(function()
+if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftAlt) then return end
+if not Mouse.Target then return end
+print(Mouse.Target)
+end)
+end)
 
 
+MainSection:NewButton("CTRL+Del ", "Inorder to Show Rejoin.", function(v)
+local Plr = game:GetService("Players").LocalPlayer
+local Mouse = Plr:GetMouse()
 
-
+Mouse.Button1Down:connect(function()
+if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftControl) then return end
+if not Mouse.Target then return end
+Mouse.Target:Destroy()
+end)
+end)
 
 
 
@@ -6946,9 +5720,11 @@ game.Players.LocalPlayer.PlayerGui.Chat.Frame.ChannelsBarParentFrame.Visible = f
 end)
 
 
-MainSection:NewButton("Remove Roblox Settings", "ButtonInfo", function(v)
-    game.CoreGui.ThemeProvider.Enabled = false
-    end)
+
+MainSection:NewButton("GameCopy ", "Only R6 Games", function(v)
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/Game_Copy_Script.txt", true))()
+end)
 
 
     MainSection:NewButton("Console ", "Inorder to Show Rejoin.", function(v)
@@ -6961,13 +5737,11 @@ MainSection:NewButton("Remove Roblox Settings", "ButtonInfo", function(v)
             game.CoreGui.RobloxPromptGui:Destroy()
             end)
 
-            MainSection:NewButton("GameCopy ", "Only R6 Games", function(v)
-
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/Game_Copy_Script.txt", true))()
-            end)
 
 
-
+            MainSection:NewButton("Remove Roblox Settings", "ButtonInfo", function(v)
+                game.CoreGui.ThemeProvider.Enabled = false
+                end)
 
 
 
@@ -7038,9 +5812,7 @@ MainSection:NewButton("Remove Roblox Settings", "ButtonInfo", function(v)
                 return game:GetService("CoreGui"):TakeScreenshot()
             end)
 
-            MainSection:NewKeybind("Close/Open ", "Close GUI", Enum.KeyCode.G, function()
-                Library:ToggleUI()
-            end)
+
 
 
 
@@ -7085,6 +5857,7 @@ MainSection:NewButton("Remove Roblox Settings", "ButtonInfo", function(v)
 
 
 local Main = Window:NewTab(" Miscellaneous ")
+local MainSection = Main:NewSection(" FPS Increase ")
 MainSection:NewButton("RTX Mode", "Better Graphics", function(v)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/RbxGraphicsImprover.lua"))()
     end)
@@ -7134,6 +5907,8 @@ MainSection:NewButton("RTX Mode", "Better Graphics", function(v)
        MainSection:NewButton("FPS Boost", "ButtonInfo", function(v)
            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Better%20FPS%20Boost"))()
            end)
+
+local MainSection = Main:NewSection(" Graphics Mics ")
 
        MainSection:NewButton("Remove graphics", "remove's graph texture ingame", function(v)
            local a = game
@@ -7460,16 +6235,360 @@ end)
 local Main = Window:NewTab(" CustomScript ")
 
 
-local MainSection = Main:NewSection("Local Player Clients")
+local MainSection = Main:NewSection("Thse Scripts Are Legit")
 
-MainSection:NewButton("JJSploit X executor", "ButtonInfo", function(v)
+MainSection:NewButton("Song Vide ", "ButtonInfo", function(v)
+    
+            game.StarterGui:SetCore("SendNotification", {
+        Title = "Song Changes ";
+        Text = "Randomly! <3";
+        Icon = "http://www.roblox.com/asset/?id=6767927252"})
+        Duration = 20;
+        local newsound = Instance.new("Sound",workspace)
+    newsound.Name = "earbleed"
+    newsound.SoundId = "rbxassetid://6754386059"
+    newsound.Looped = false
+    game.Workspace.earbleed.Volume = 10
+    newsound:Play() 
+    
+    wait(50)
+ game.Workspace.earbleed.SoundId = "rbxassetid://4540664171"   
+ 
+     wait(50)
+ game.Workspace.earbleed.SoundId = "rbxassetid://8609752363"   
+
+     wait(50)
+ game.Workspace.earbleed.SoundId = "rbxassetid://8609752363"   
+wait(50)
+game.Workspace.earbleed.SoundId = "rbxassetid://6465500552" 
+wait(50)
+game.Workspace.earbleed.SoundId = "rbxassetid://6458885773" 
+
+end)
+
+MainSection:NewButton("JJSploit X Premium", "ButtonInfo", function(v)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/TROLL"))()
+end)
+
+MainSection:NewButton("Krnl Premium", "ButtonInfo", function(v)
+    local newsound = Instance.new("Sound",workspace)
+    newsound.Name = "earbleed"
+    newsound.SoundId = "rbxassetid://221057812"
+    newsound.Looped = false
+    game.Workspace.earbleed.Volume = 10
+    newsound:Play() 
+wait(2)
+game.Players.LocalPlayer:Kick("You Have Been Kicked By Krnl Staff")
+
+end)
+
+MainSection:NewButton("Synapse x Randomiser Key ", "ButtonInfo", function(v)
+        game.StarterGui:SetCore("SendNotification", {
+        Title = "Copied!";
+        Text = "Check Your ClipBoard!";
+        Icon = "http://www.roblox.com/asset/?id=6767927252"})
+        Duration = 20;
+    setclipboard("AJDIOAWDAW09021381903YWQiwnauf9123787901jJ")
+end)
+
+MainSection:NewButton("TopKeK 5", "ButtonInfo", function(v)
+    game.Players.LocalPlayer:Kick("Free")
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local Main = Window:NewTab("⚙️    Settings        ")
+local MainSection = Main:NewSection("Player Function Scripts")
+
+
+
+MainSection:NewButton("Anti-AFK", "Be Afk Forever!", function(v)
+    local vu = game:GetService("VirtualUser")
+    game:GetService("Players").LocalPlayer.Idled:connect(function()
+        vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+        wait(1)
+        vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    end)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Anti - AFK";
+        Text = "Enabled ";
+        Duration = 20;
+    })
+    end)
+    
+    MainSection:NewButton("Anti-Ban", "Ignore Ban System", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Anti_Chat_Log-1.txt"))()
+        end)
+    
+    
+        MainSection:NewButton("Anti-Chatlog", "Ignore Bannable ChatSysmtem", function(v)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Anti_Chat_Log-1.txt"))()
+            end)
+    
+            MainSection:NewButton("Anti-Kick", "Prevents Kick Scripts", function(v)
+                local mt = getrawmetatable(game)
+                local old = mt.__namecall
+                local protect = newcclosure or protect_function
+            
+                if not protect then
+                    notify("Incompatible Exploit Warning", "Your exploit does not support protection against stack trace errors, resulting to fallback function")
+                    protect = function(f) return f end
+                end
+            
+                setreadonly(mt, false)
+                mt.__namecall = protect(function(self, ...)
+                    local method = getnamecallmethod()
+                    if method == "Kick" then
+                        wait(9e9)
+                        return
+                    end
+                    return old(self, ...)
+                end)
+                hookfunction(Players.LocalPlayer.Kick,protect(function() wait(9e9) end))
+            
+                notify('Client Antikick','Client anti kick is now active (only effective on localscript kick)')
+                end)
+    
+                MainSection:NewButton("Anti-Report", "Prevents Getting Reported", function(v)
+                    setfflag("AbuseReportScreenshotPercentage", 0)
+    setfflag("DFFlagAbuseReportScreenshot", "False")
+                    end)
+    
+                    MainSection:NewButton("AntiFling", "R6", function(v)
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Anti_Fling-1.lua", true))()
+                        end)
+
+                        local MainSection = Main:NewSection("Side Script")
+
+                MainSection:NewButton("Chat-Spy", "Spy some nerds", function(v)
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/spychat", true))()
+                    end)
+   
+                    MainSection:NewButton("Auto Rejoin Server", "ButtonInfo", function(v)
+                        print("Rejoin On Kick Script Loaded Successfully")
+                    
+                    while true do wait()
+                    getgenv().rejoin = game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(Kick)
+                        if Kick.Name == 'ErrorPrompt' and Kick:FindFirstChild('MessageArea') and Kick.MessageArea:FindFirstChild("ErrorFrame") then
+                            game:GetService("TeleportService"):Teleport(game.PlaceId)
+                        end
+                    end)
+                    end
+                    end)
+
+                    MainSection:NewButton("Rejoin Server", "ButtonInfo", function(v)
+                        game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
+                    end)
+
+                    MainSection:NewButton("Server Hop","Joins a new server",function()
+                        local Servers = game.HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+                        for i,v in pairs(Servers.data) do
+                            if v.playing ~= v.maxPlayers then
+                                game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, v.id)
+                            end
+                        end
+                    end)
+
+                    MainSection:NewButton("Get Kick", "ButtonInfo", function(v)
+                        game.Players.LocalPlayer:Kick("You Have Been Kicked By Strix G Hub")
+                    end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local MainSection = Main:NewSection("Audio Client ")
+
+
+MainSection:NewButton("Load Audio Gui", "ButtonInfo", function(v)
+    
+    game.StarterGui:SetCore("SendNotification", 
+    {Title = "If You Die ",
+        Text = "Execute it Again",
+        Icon = "rbxassetid://505845268", 
+        Duration = 5,
+        Button1 = "Okay!"})
+
+local plr = game.Players.LocalPlayer
+plrgui = plr.PlayerGui
+local base = Instance.new("ScreenGui",plrgui)
+local bground = Instance.new("Frame",base)
+local ImageLabel = Instance.new("ImageLabel")
+bground.Draggable = true
+bground.Selectable = true
+bground.Active = true
+ImageLabel.Parent = bground
+ImageLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.Position = UDim2.new(0.1,0,0.1,0)
+ImageLabel.Size = UDim2.new(0.60,75,0.42,102)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=6767927252"
+ImageLabel.BorderSizePixel = 0
+base.Name = "rogstrixsong"
+bground.Name = "bground"
+bground.Position = UDim2.new(0.4,0,0.3,0)
+bground.Size = UDim2.new(0.2,0,0.22,0)
+bground.BackgroundColor3 = Color3.fromRGB(0,0,0)
+bground.BorderColor3 = Color3.fromRGB(255,0,0)
+bground.BorderSizePixel = 0
+local tbox = Instance.new("TextBox",bground)
+tbox.Name = "tbox"
+tbox.Text = " Sound ID "
+tbox.Position = UDim2.new(0.15,0,0.25,0)
+tbox.Size = UDim2.new(0.7,0,0.25,0)
+tbox.TextWrapped = true
+tbox.TextScaled = true
+tbox.TextColor3 = Color3.fromRGB(255, 0, 0)
+tbox.BackgroundTransparency = 0.5
+tbox.BackgroundColor3 = Color3.fromRGB(0,0,0)
+tbox.BorderColor3 = Color3.fromRGB(255,0,0)
+tbox.BorderSizePixel = 0
+local submit = Instance.new("TextButton",bground)
+submit.Name = "submit"
+submit.Text = "Submit"
+submit.Position = UDim2.new(0.15,0,0.6,0)
+submit.Size = UDim2.new(0.7,0,0.25,0)
+submit.TextScaled = true
+submit.TextWrapped = true
+submit.TextColor3 = Color3.fromRGB(255, 0, 0)
+submit.BackgroundColor3 = Color3.fromRGB(0,0,0)
+submit.BorderColor3 = Color3.fromRGB(0,0,0)
+submit.BorderSizePixel = 1
+submit.BackgroundTransparency = 0.5
+
+--time for the goodies amirite
+function sound(s)
+   local newsound = Instance.new("Sound",workspace)
+    newsound.Name = "earbleed"
+    newsound.SoundId = "rbxassetid://"..tbox.Text
+    newsound.Looped = true
+    newsound:Play() 
+local earbleep = Instance.new("DistortionSoundEffect",newsound)
+earbleep.Enabled = false
+earbleep.Level = 10
+earbleep.Priority = 5
+
+local earbleep= Instance.new("EqualizerSoundEffect",newsound)
+earbleep.Enabled = false
+earbleep.HighGain = 10
+earbleep.LowGain = 10
+earbleep.MidGain = -20
+earbleep.Priority = 0
+game.Workspace.earbleed.Volume = 10
+
+
+end
+submit.MouseButton1Down:connect(sound)
+
+game.Players.LocalPlayer.PlayerGui.rogstrixsong.ResetOnSpawn = false
+
+end)
+MainSection:NewSlider("Volume", "SliderInfo", 10, 0, function(s)
+   game.Workspace.earbleed.Volume = s
+
+end)
+
+
+MainSection:NewButton("Normal", "ButtonInfo", function(v)
+
+game.Workspace.earbleed.DistortionSoundEffect.Enabled = false
+game.Workspace.earbleed.EqualizerSoundEffect.Enabled = false
+
+end)
+
+MainSection:NewButton("NormalBass", "ButtonInfo", function(v)
+
+game.Workspace.earbleed.DistortionSoundEffect.Enabled = false
+game.Workspace.earbleed.EqualizerSoundEffect.Enabled = true
+
+end)
+
+MainSection:NewButton("BassBoosted", "ButtonInfo", function(v)
+
+game.Workspace.earbleed.DistortionSoundEffect.Enabled = true
+game.Workspace.earbleed.EqualizerSoundEffect.Enabled = true
+
+
+end)
+
+
+MainSection:NewButton("Stop Music", "ButtonInfo", function(v)
+ game.Workspace.earbleed:Destroy()
+    
+    game.Workspace.earbleed.DistortionSoundEffect:Destroy()
+    
+    
+end)
+
+MainSection:NewButton("Remove Audio Gui", "ButtonInfo", function(v)
+ game.Players.LocalPlayer.PlayerGui.rogstrixsong:Destroy()
+    
+    
+end)
+
+
+
+
+
+
+
+MainSection:NewButton("Audio Logger", "ButtonInfo", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/audio%20logger"))()
    end)
 
-local Main = Window:NewTab(" Settings ")
-local MainSection = Main:NewSection("Local Player Clients")
 
-local MainSection = Main:NewSection("Local Player Clients")
+   local MainSection = Main:NewSection("Strix G Hub Control")
+            MainSection:NewKeybind("Close/Open ", "Close GUI", Enum.KeyCode.G, function()
+                Library:ToggleUI()
+            end)
 
 wait(4)
 game.Workspace.earbleed:Destroy()
