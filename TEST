@@ -6251,15 +6251,15 @@ MainSection:NewButton("Song Vide ", "ButtonInfo", function(v)
     game.Workspace.earbleed.Volume = 10
     newsound:Play() 
     
-    wait(90)
+    wait(88.8)
  game.Workspace.earbleed.SoundId = "rbxassetid://4540664171"   
- wait(143)
+ wait(148.8)
      
  game.Workspace.earbleed.SoundId = "rbxassetid://8609752363"   
-wait(192)
+wait(180)
      
 game.Workspace.earbleed.SoundId = "rbxassetid://6465500552" 
-wait(87)
+wait(88.8)
 game.Workspace.earbleed.SoundId = "rbxassetid://6458885773" 
 wait(30)
 
