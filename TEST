@@ -6240,7 +6240,7 @@ local MainSection = Main:NewSection("Thse Scripts Are Legit")
 MainSection:NewButton("Song Vide ", "ButtonInfo", function(v)
     
             game.StarterGui:SetCore("SendNotification", {
-        Title = "Song Changes ";
+        Title = "!!Song Changes ";
         Text = "Randomly! <3";
         Icon = "http://www.roblox.com/asset/?id=6767927252"})
         Duration = 20;
@@ -6251,15 +6251,15 @@ MainSection:NewButton("Song Vide ", "ButtonInfo", function(v)
     game.Workspace.earbleed.Volume = 10
     newsound:Play() 
     
-    wait(155)
+    wait(90)
  game.Workspace.earbleed.SoundId = "rbxassetid://4540664171"   
- wait(243)
+ wait(143)
      
  game.Workspace.earbleed.SoundId = "rbxassetid://8609752363"   
-wait(323)
+wait(192)
      
 game.Workspace.earbleed.SoundId = "rbxassetid://6465500552" 
-wait(149)
+wait(87)
 game.Workspace.earbleed.SoundId = "rbxassetid://6458885773" 
 wait(30)
 
