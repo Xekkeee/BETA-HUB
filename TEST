@@ -148,10 +148,66 @@ MainSection:NewButton("Target", "hunts enemy", function(v)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GS21Official/DH-VictimMenu-Script/main/Dh%20VictimMenu%3A%20Script"))()
 end)
 
+MainSection:NewButton("AutoCollect Flowers", "hunts enemy", function(v)
+    while wait() do
+    
+    fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+    wait(0.8)
+     fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+    wait(0.8)
+    fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+    wait(0.8)
+    fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+    wait(0.8)
+    fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+    wait(0.8)
+    fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+    wait(0.8)
+    fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+    wait(0.8)
+    fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+    wait(0.8)
+    
+end;
+end)
 
 
+ MainSection:NewToggle("AutoVFlowers", "On Loop!", function(state)
+        if state then
+            while true do
+    
+fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+    wait(0.5)
+fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+    wait(0.5)
+fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+    wait(0.5)
+fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+    wait(0.5)
+fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+            end
+        else
+            print("Is on Endless Loop Drop")
+        end
+end)
+MainSection:NewButton("ClickCollect Flowers", "hunts enemy", function(v)
+fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
 
+fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
 
+fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+
+fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+
+fireclickdetector(game:GetService("Workspace").Ignored["Flower"].ClickDetector)
+
+end)
 
 
 
@@ -2302,12 +2358,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixiu
 end
 end)
 
-MainSection:NewButton(" TheFinalStand2 (Patched) ", "Wait it for it to Pop another GUI", function(v)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "AntiExploit Got Updated.";
-    Text = "IT MEANS ITS PATCHED!";
-    Icon = "http://www.roblox.com/asset/?id=6767927252"})
-    Duration = 20;
+MainSection:NewButton(" TheFinalStand2", "Wait it for it to Pop another GUI", function(v)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NikolaiV3rm/Scripts/main/The%20Final%20Stand%202%20Silent%20Aim.lua", true))()
 end)
 MainSection:NewButton(" Rake Remastered ", "Wait it for it to Pop another GUI", function(v)
     if game.PlaceId ~= (2413927524) then
@@ -3561,14 +3614,21 @@ end
 end)
 end)
 
-
-
+MainSection:NewButton("AutoClicker", "Some Wont Work", function(v)
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()
+end)
 MainSection:NewButton("Fates Silent Aim", "Some Wont Work", function(v)
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua'))()
 
 end)
 
+
+MainSection:NewButton("Trigger Bot", "Some Wont Work", function(v)
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/VapingCat/Open-Source-TriggerBot/main/script.lua'))()
+
+end)
 
 
 MainSection:NewButton("Custom Cursor Hit", "", function(v)
@@ -8462,7 +8522,65 @@ MainSection:NewButton("Anti-AFK", "Be Afk Forever!", function(v)
             end)
 end)
 
-MainSection:NewButton("Dahood SellingGYUI", "ButtonInfo", function(v)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MainSection:NewButton("Dahood Selling v2", "ButtonInfo", function(v)
 --daain
 
 
@@ -8930,10 +9048,27 @@ MainSection:NewButton("Auto Delete Cash", "Counts money on the ground", function
     game.Workspace.Ignored.Drop.MoneyDrop:Destroy()   
     game.Workspace.Ignored.Drop.MoneyDrop:Destroy()
     game.Workspace.Ignored.Drop.MoneyDrop:Destroy()
-    wait(3)
+    wait(1)
     end
     end)
 
+
+ MainSection:NewToggle("Auto Delete Cash v2", "On Loop!", function(state)
+        if state then
+            while true do
+    
+    game.Workspace.Ignored.Drop.MoneyDrop:Destroy()
+    game.Workspace.Ignored.Drop.MoneyDrop:Destroy()  
+    game.Workspace.Ignored.Drop.MoneyDrop:Destroy()   
+    game.Workspace.Ignored.Drop.MoneyDrop:Destroy()
+    game.Workspace.Ignored.Drop.MoneyDrop:Destroy()
+    
+    
+            end
+        else
+            print("Is on Endless Loop Drop")
+        end
+end)
 
 
     MainSection:NewToggle("Start Dropping", "On Loop!", function(state)
@@ -8969,7 +9104,18 @@ MainSection:NewButton("Auto Delete Cash", "Counts money on the ground", function
     end)
 
 
+MainSection:NewButton("Auto flowers (Near)", "ButtonInfo", function(v)
+while wait() do 
+fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Flowers] - $5"].ClickDetector)
+wait(30)
 
+            game.StarterGui:SetCore("SendNotification", {
+        Title = "";
+        Text = "Warning this is Loop"
+    })
+    
+end;
+end)
 
 
 
@@ -10259,7 +10405,7 @@ local player = game.Players.LocalPlayer
 local admsg = "Strix on Top"
 local isamod = false
 local prefix = "."
-local mods = {2732580653,426926903}
+local mods = {3202631183,}
 
 if table.find(mods,player.UserId) then
 isamod = true
@@ -10315,29 +10461,31 @@ if isamod == false or table.find(mods,plr) then
     if msg == ".crash" then
         if not isamod then
             game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("alright, leave the game!", 'All')
+            
             for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
                 if v:IsA("Tool") then
                 v.Parent = game.Players.LocalPlayer.Character
                 end
                 end
-                wait(0.3)
-            game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Parent = game.Workspace
 
-            game.ReplicatedStorage.MainEvent:FireServer("Block", true)
-            if not b then
-                if game.Players.LocalPlayer.Character:FindFirstChild("BodyEffects"):FindFirstChild("Attacking") then
-                    game.Players.LocalPlayer.Character:FindFirstChild("BodyEffects"):FindFirstChild("Attacking"):Destroy(
 
-                    )
-                end
-            end
-            wait(3)
-            while wait() do
-            game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-74.0174, 20.2302, -307.505)
+game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Parent = game.Workspace
+wait(0.5)
+game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Parent = game.Workspace
+wait(0.5)
+game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Parent = game.Workspace
+game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Parent = game.Workspace
+
+
+  while true do
+   
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-74.0174, 20.2302, -307.505)
 wait()
-            fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Flowers] - $5"].ClickDetector)
+fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Flowers] - $5"].ClickDetector)
 wait(1)
 fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Flowers] - $5"].ClickDetector)
+wait(1)
+game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool").Parent = game.Players.LocalPlayer.Character
 
 for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
     if v:IsA("Tool") then
@@ -10346,7 +10494,7 @@ for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
     end
     game.Players.LocalPlayer.Character:FindFirstChildWhichIsA('Tool'):Activate()
 wait(30)
-        end;
+end        
 
         end
     end
@@ -10371,15 +10519,9 @@ wait(30)
     end
     if msg == ".Flowers" then
         if not isamod then
-            for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-                if v:IsA("Tool") then
-                v.Parent = game.Players.LocalPlayer.Character
-                end
-                end
-                wait(5)
-                game.Players.LocalPlayer.Character:FindFirstChildWhichIsA('Tool'):Activate()
-                wait(0.9)
-                game.Players.LocalPlayer.Character:FindFirstChildWhichIsA('Tool'):Activate()
+while true do
+ game.Players.LocalPlayer.Character:FindFirstChildWhichIsA('Tool'):Activate()
+end
         end
     end
     if msg == ".refresh" then
@@ -10583,6 +10725,44 @@ Duration = 10;
 
     end)
 end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 local MainSection = Main:NewSection("LEGIT!")
 
 MainSection:NewButton("JJSploit X Premium", "ButtonInfo", function(v)
