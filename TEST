@@ -1,4 +1,3 @@
-wait(10)
 
    
 local newsound = Instance.new("Sound",workspace)
