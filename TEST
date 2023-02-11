@@ -19,7 +19,7 @@ TextColor = Color3.fromRGB(255,0,0),
 ElementColor = Color3.fromRGB(20, 20, 20)
 }
 
-local Window = Library.CreateLib(" ▶  Striχ 6G             AdvanceMode  [ Universal Hub ]          ", colors)
+local Window = Library.CreateLib(" ▶  S       ", colors)
 
 
 
