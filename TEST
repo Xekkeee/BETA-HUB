@@ -1,14 +1,4 @@
-
-   
-local newsound = Instance.new("Sound",workspace)
-    newsound.Name = "earbleed"
-    newsound.SoundId = "rbxassetid://221057812"
-    newsound.Looped = false
-    game.Workspace.earbleed.Volume = 10
-    newsound:Play() 
-
-
-
+--LOKEYEW
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local colors = {
 SchemeColor = Color3.fromRGB(0,0,0),
